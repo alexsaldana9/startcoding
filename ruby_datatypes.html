@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Ruby: Data Types</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./home_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./home_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./home_files/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./home_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="home.html">Home</a>
+          <a class="blog-nav-item" href="html.html">HTML</a>
+          <a class="blog-nav-item" href="css.html">CSS</a>
+          <a class="blog-nav-item active" href="Ruby.html">Ruby</a>
+          <a class="blog-nav-item" href="contact.html">Contact Us</a>
+          <a class="blog-nav-item" href="about.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Ruby</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Data Types</h2>
+            <p class="blog-post-meta">March 5, 2017 by <a href="about.html">Alex</a></p>
+            <p>Like any other programming language, Ruby has data types.
+            Here is the list of the different data types</p>
+            <ul>
+              <li>Numbers</li>
+              <li>Strings</li>
+              <li>Booleans</li>
+              <li>Symbols</li>
+              <li>Arrays</li>
+              <li>Hashes</li>
+            </ul>
+
+
+
+            <pre><code>print "Hello World!"</code></pre>
+            <p>This is usually the first line that all programmers write to see how to print text into the terminal. Your terminal window should return the following code:</p>
+            <pre><code>Hello World!=> nil</code></pre>
+
+            <p>Now, let's print numbers and text. To print text into the terminal, you must include the text within "quotes", oposite to numbers, which it is not required to be inside quotes.
+              Write the following code:</p>
+            <pre><code>print "Hello, student!"</code></pre>
+            <pre><code>print 100</code></pre>
+
+            <p>That code should show this:</p>
+            <pre><code>Hello, student!=> nil</code></pre>
+            <pre><code>100=> nil</code></pre>
+
+            <h3>Why does the terminal return nil?</h3>
+            <p><code>nil</code> is the Ruby object that represents nothingness. Whenever a method doesn’t return a useful value,
+              it returns <code>nil</code>. <code>puts</code> and <code>print</code> are methods that return <code>nil</code>
+            Refer to <a href="https://www.codecademy.com/en/forum_questions/52a112378c1cccb0f6001638">Code academy</a> to see the full explanation</p>
+            <hr>
+            <h3>Other methods for printing</h3>
+            <p>There is <code>p</code> and <code>puts</code></p>
+
+            <h4>Use <code>puts</code></h4>
+            <pre><code>puts "Hello Wolrd!"</code></pre>
+            <p>This is what the terminal prints:</p>
+            <pre><code>Hello Wolrd!
+=> nil</code></pre>
+            <p>As you can see, the <code>nil</code> shows up in the line below</p>
+
+            <h4>Use <code>p</code></h4>
+            <pre><code>p "Hello Wolrd!"</code></pre>
+            <p>This is what the terminal prints:</p>
+            <pre><code>"Hello World!"
+=> "Hello World!"</code></pre>
+            <p>As you can see, <code>p</code> prints out the string (text) inside quotes</p>
+
+
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="http://getbootstrap.com/examples/blog/#">Previous</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="ruby_strings.html">Strings</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Numbers</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Data types</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">December 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">November 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">October 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">September 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">August 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">July 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">June 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">May 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://getbootstrap.com/examples/blog/#">GitHub</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Twitter</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="http://getbootstrap.com/examples/blog/#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./home_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./home_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./home_files/ie10-viewport-bug-workaround.js"></script>
+
+
+</body></html>
