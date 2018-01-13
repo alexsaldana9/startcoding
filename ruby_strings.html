@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Ruby: Strings</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./home_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./home_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./home_files/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./home_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="home.html">Home</a>
+          <a class="blog-nav-item" href="html.html">HTML</a>
+          <a class="blog-nav-item" href="css.html">CSS</a>
+          <a class="blog-nav-item active" href="Ruby.html">Ruby</a>
+          <a class="blog-nav-item" href="contact.html">Contact Us</a>
+          <a class="blog-nav-item" href="about.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Ruby</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Let's Print some more <strong>Strings</strong></h2>
+            <p class="blog-post-meta">March 5, 2017 by <a href="about.html">Alex</a></p>
+            <p>We must be able to concatenate strings</p>
+
+            <pre><code>puts "Hello " + "Alex"</code></pre>
+            <p> Your terminal window should return the following code:</p>
+            <pre><code>Hello Alex
+=> nil</code></pre>
+            <p>Remember to add a space after the word "Hello" or before "Alex", to prevent the string from having a joint string<p>
+            <hr>
+            <p>Now, let's print a paragraph with multiple lines </p>
+            <pre><code> puts << END
+this is a here doc.
+displays multi line text
+displays multi line text.
+displays multi line text
+displays multi line text
+END</code></pre>
+
+            <p>That code should show this:</p>
+            <pre><code>this is a here doc.
+displays multi line text
+displays multi line text.
+displays multi line text
+displays multi line text </code></pre>
+
+<hr>
+
+            <h3>Print:  Exercises</h3>
+            <p>Print the following phrases into your terminal, by using any method you wish</p>
+
+            <pre><code>
+            1. Hello World!
+            2. Hello yourname
+            3. Hello Alex and John  (concatenate the names)
+          </pre></code>
+
+
+
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="Ruby.html">Previous</a></li>
+              <li><a href="ruby_datatypes.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>More of Ruby</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://getbootstrap.com/examples/blog/#">Strings</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Numbers</a></li>
+              <li><a href="ruby_datatypes.html">Data types</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">December 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">November 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">October 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">September 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">August 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">July 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">June 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">May 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://getbootstrap.com/examples/blog/#">GitHub</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Twitter</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="http://getbootstrap.com/examples/blog/#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./home_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./home_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./home_files/ie10-viewport-bug-workaround.js"></script>
+
+
+</body></html>
