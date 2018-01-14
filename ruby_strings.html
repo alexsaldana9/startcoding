@@ -58,17 +58,33 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">Let's Print some more <strong>Strings</strong></h2>
-            <p class="blog-post-meta">March 5, 2017 by <a href="about.html">Alex</a></p>
-            <p>We must be able to concatenate strings</p>
 
-            <pre><code>puts "Hello " + "Alex"</code></pre>
-            <p> Your terminal window should return the following code:</p>
-            <pre><code>Hello Alex
+<hr>
+              <p>Let's write our first line of code in the terminal</p>
+
+              <pre><code>print "Hello World!"</code></pre>
+              <p>This is usually the first line that all programmers write to see how to print text into the terminal. Your terminal window should return the following code:</p>
+              <pre><code>Hello World!=> nil</code></pre>
+
+              <p>Now, let's print numbers and text. To print text into the terminal, you must include the text within "quotes", oposite to numbers, which it is not required to be inside quotes.
+                  Write the following code:</p>
+              <pre><code>print "Hello, student!"</code></pre>
+              <pre><code>print 100</code></pre>
+
+              <p>That code should show this:</p>
+              <pre><code>Hello, student!=> nil</code></pre>
+              <pre><code>100=> nil</code></pre>
+
+              <p>We must be able to concatenate strings</p>
+
+              <pre><code>puts "Hello " + "Leia"</code></pre>
+              <p> Your terminal window should return the following code:</p>
+              <pre><code>Hello Leia
 => nil</code></pre>
-            <p>Remember to add a space after the word "Hello" or before "Alex", to prevent the string from having a joint string<p>
-            <hr>
-            <p>Now, let's print a paragraph with multiple lines </p>
-            <pre><code> puts << END
+              <p>Remember to add a space after the word "Hello" or before "Leia", to prevent the string from having a joint string<p>
+              <hr>
+              <p>Now, let's print a paragraph with multiple lines </p>
+              <pre><code> puts << END
 this is a here doc.
 displays multi line text
 displays multi line text.
@@ -76,14 +92,34 @@ displays multi line text
 displays multi line text
 END</code></pre>
 
-            <p>That code should show this:</p>
-            <pre><code>this is a here doc.
+              <p>That code should show this:</p>
+              <pre><code>this is a here doc.
 displays multi line text
 displays multi line text.
 displays multi line text
 displays multi line text </code></pre>
 
-<hr>
+              <h3>Why does the terminal return nil?</h3>
+              <p><code>nil</code> is the Ruby object that represents nothingness. Whenever a method doesn’t return a useful value,
+                  it returns <code>nil</code>. <code>puts</code> and <code>print</code> are methods that return <code>nil</code>
+                  Refer to <a href="https://www.codecademy.com/en/forum_questions/52a112378c1cccb0f6001638">Code academy</a> to see the full explanation</p>
+              <hr>
+              <h3>Other methods for printing</h3>
+              <p>There is <code>p</code> and <code>puts</code></p>
+
+              <h4>Use <code>puts</code></h4>
+              <pre><code>puts "Hello Wolrd!"</code></pre>
+              <p>This is what the terminal prints:</p>
+              <pre><code>Hello Wolrd!
+=> nil</code></pre>
+              <p>As you can see, the <code>nil</code> shows up in the line below</p>
+
+              <h4>Use <code>p</code></h4>
+              <pre><code>p "Hello Wolrd!"</code></pre>
+              <p>This is what the terminal prints:</p>
+              <pre><code>"Hello World!"
+=> "Hello World!"</code></pre>
+              <p>As you can see, <code>p</code> prints out the string (text) inside quotes</p>
 
             <h3>Print:  Exercises</h3>
             <p>Print the following phrases into your terminal, by using any method you wish</p>
@@ -91,7 +127,7 @@ displays multi line text </code></pre>
             <pre><code>
             1. Hello World!
             2. Hello yourname
-            3. Hello Alex and John  (concatenate the names)
+            3. Hello Leia and Luke  (concatenate the names)
           </pre></code>
 
 
@@ -100,7 +136,7 @@ displays multi line text </code></pre>
 
           <nav>
             <ul class="pager">
-              <li><a href="Ruby.html">Previous</a></li>
+              <li><a href="set_ruby.html">Previous</a></li>
               <li><a href="ruby_datatypes.html">Next</a></li>
             </ul>
           </nav>
@@ -108,33 +144,23 @@ displays multi line text </code></pre>
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
+
           <div class="sidebar-module">
             <h4>More of Ruby</h4>
             <ol class="list-unstyled">
-              <li><a href="http://getbootstrap.com/examples/blog/#">Strings</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">Numbers</a></li>
               <li><a href="ruby_datatypes.html">Data types</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">December 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">November 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">October 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">September 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">August 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">July 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">June 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">May 2013</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">April 2013</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Operations</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Loops</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">If Statements</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Conditionals</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">More Exercises</a></li>
             </ol>
           </div>
           <div class="sidebar-module">
-            <h4>Elsewhere</h4>
+            <h4>Social Links</h4>
             <ol class="list-unstyled">
-              <li><a href="http://getbootstrap.com/examples/blog/#">GitHub</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">Twitter</a></li>
-              <li><a href="http://getbootstrap.com/examples/blog/#">Facebook</a></li>
+                <li><a href="https://github.com/alexsaldana9">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/alexandra-saldana-15816450">Linkedin</a></li>
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
@@ -144,10 +170,7 @@ displays multi line text </code></pre>
     </div><!-- /.container -->
 
     <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="http://getbootstrap.com/examples/blog/#">Back to top</a>
-      </p>
+      <p>Blog template built for <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
     </footer>
 
 
