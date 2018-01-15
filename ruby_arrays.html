@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Start Coding: Home</title>
+    <title>Ruby: Arrays</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./home_files/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 <div class="container">
 
     <div class="blog-header">
-        <h1 class="blog-title">Set Up Ruby</h1>
+        <h1 class="blog-title">Ruby</h1>
     </div>
 
     <div class="row">
@@ -57,23 +57,45 @@
         <div class="col-sm-8 blog-main">
 
             <div class="blog-post">
-                <p>Go to <a href="https://www.ruby-lang.org/en/documentation/installation/" target="_blank">Ruby</a> download the latest ruby version</p>
+                <h2 class="blog-post-title">Arrays</h2>
+
+                <hr>
+
+                <p>Ordered collections</p>
+                <p>To declare a new array: </p>
+                <pre><code>
+2.3.3 :001 > array = []
+                </code></pre>
+
+                <p>Arrays can contain strings and numbers </p>
+                <pre><code>
+2.3.3 :001 > array = [1,2,3,"cat", "dog"]
+                </code></pre>
+
+                <p>To get a specific item from the array, you need to get the index right. Arrays index start at 0. </p>
+                <pre><code>
+2.3.3 :007 > array[2]
+ => 3
+2.3.3 :008 > array[4]
+ => "dog"
+2.3.3 :009 >
+                    </code></pre>
+
+
 
             </div><!-- /.blog-post -->
 
             <nav>
                 <ul class="pager">
-                    <li><a href="ruby_strings.html">Next</a></li>
+                    <li><a href="ruby_operations.html">Previous</a></li>
+                    <li><a href="ruby_loops.html">Next</a></li>
                 </ul>
             </nav>
 
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>Suggestions</h4>
-                <p>Email me at alexsaldana9@gmail.com for topics that you would like to cover or just say Hi!</p>
-            </div>
+
             <div class="sidebar-module">
                 <h4>More of Ruby</h4>
                 <ol class="list-unstyled">
@@ -91,8 +113,8 @@
             <div class="sidebar-module">
                 <h4>Social Links</h4>
                 <ol class="list-unstyled">
-                    <li><a href="https://github.com/alexsaldana9" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/alexandra-saldana-15816450" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/alexsaldana9">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandra-saldana-15816450">Linkedin</a></li>
                 </ol>
             </div>
         </div><!-- /.blog-sidebar -->

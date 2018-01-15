@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Start Coding: Home</title>
+    <title>Ruby: Operations</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./home_files/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 <div class="container">
 
     <div class="blog-header">
-        <h1 class="blog-title">Set Up Ruby</h1>
+        <h1 class="blog-title">Ruby</h1>
     </div>
 
     <div class="row">
@@ -57,23 +57,59 @@
         <div class="col-sm-8 blog-main">
 
             <div class="blog-post">
-                <p>Go to <a href="https://www.ruby-lang.org/en/documentation/installation/" target="_blank">Ruby</a> download the latest ruby version</p>
+                <h2 class="blog-post-title">Loops</h2>
+
+                <hr>
+
+                <h3>each method</h3>
+
+                <p>Iterate through each element of the array</p>
+
+                <pre><code>
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        arr.each do |n|
+	        if n > 5
+                    puts n
+	        end
+        end
+                    </code></pre>
+
+                <pre><code>
+                2.3.3 :001 > arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+                arr.each {|n| puts n}
+
+                    => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                </code></pre>
+
+                <p>The break keyword, exits out of the loop</p>
+                <pre><code>
+                    i = 0
+                    loop do
+                      i += 2
+                      puts i
+                      if i == 5
+                        break
+                       end
+                    end
+                </code></pre>
+
 
             </div><!-- /.blog-post -->
 
             <nav>
                 <ul class="pager">
-                    <li><a href="ruby_strings.html">Next</a></li>
+                    <li><a href="ruby_arrays.html">Previous</a></li>
+                    <li><a href="ruby_ifstatements.html">Next</a></li>
                 </ul>
             </nav>
 
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-            <div class="sidebar-module sidebar-module-inset">
-                <h4>Suggestions</h4>
-                <p>Email me at alexsaldana9@gmail.com for topics that you would like to cover or just say Hi!</p>
-            </div>
+
             <div class="sidebar-module">
                 <h4>More of Ruby</h4>
                 <ol class="list-unstyled">
@@ -91,8 +127,8 @@
             <div class="sidebar-module">
                 <h4>Social Links</h4>
                 <ol class="list-unstyled">
-                    <li><a href="https://github.com/alexsaldana9" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/alexandra-saldana-15816450" target="_blank">Linkedin</a></li>
+                    <li><a href="https://github.com/alexsaldana9">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandra-saldana-15816450">Linkedin</a></li>
                 </ol>
             </div>
         </div><!-- /.blog-sidebar -->
